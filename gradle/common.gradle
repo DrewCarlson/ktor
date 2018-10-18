@@ -28,6 +28,7 @@ dependencies {
 
     compile(group: 'org.jetbrains.kotlinx', name: 'kotlinx-coroutines-io', version: kotlinx_io_version) {
         exclude(module: 'kotlin-stdlib-common')
+        exclude(module: 'kotlinx-coroutines-core-common')
     }
 
     testCompile "org.jetbrains.kotlin:kotlin-test-annotations-common:$kotlin_version"
